@@ -13,5 +13,5 @@ o	On a Windows server, open Windows PowerShell.
 o	Run the ExtendNetworks.ps1 script.
 o	Choose the Data.xlsx Excel file when prompted.
 o	Follow the onscreen instructions.
-## End Result: Upon successful completion of the script, your on-premises networks will be extended to the Cloud NSX-T, allowing you to utilize the extended networks.
+## End Result: Upon successful completion of the script, on-premises networks will be extended to the Cloud NSX-T, enabling the utilization of the extended networks.
 ## Next Script: Script 3: vMotion/Bulk/Cold Migration of VMs
