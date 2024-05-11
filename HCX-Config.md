@@ -5,12 +5,12 @@ Deploy and Configure HCX Connector OVA on On-Premises vCenter
 
 ## Procedure to run the script:
 1.	Download the HCX Connector OVA File:
-o	Navigate to the HCX Cloud UI (https://hcxcloudmgr-ip-or-fqdn). Go to “Administration” > “System Updates.” Click “Request Download Link” to download the HCX Connector OVA file to your Windows Jump box.
+o	Navigate to the HCX Cloud UI (https://hcxcloudmgr-ip-or-fqdn). Go to “Administration” > “System Updates.” Click “Request Download Link” to download the HCX Connector OVA file to Windows Jump box.
 2.	Prepare the Data.xlsx File:
 o	Download the Data.xlsx file, Fill in the sheet named “OVADeploy” with the correct details.
 o	Refer to the instructions provided in the same sheet to complete each cell in the Excel file.
 3.	Get the VMware.HCX.psm1 Module:
-o	Download the VMware.HCX.psm1 module to your Jump box
+o	Download the VMware.HCX.psm1 module to Jump box
 4.	Download the PowerShell Script:
 o	Obtain the PowerShell script named “HCX-Config.ps1.”
 5.	Execute the Script:
