@@ -26,12 +26,13 @@ Using the regular console for VMware HCX migration or replication can be quite c
 
 Additionally, manually doing this through the console is both tedious and prone to errors.
 
-However, with this automation, you’ll be able to perform single-click Deployment, Migration and Replication for a large number of VMs. It streamlines the process and makes it much more efficient with minimal manual effort.
+With this automation in place, performing single-click Deployment, Migration, and Replication for a large number of VMs becomes feasible. The process is streamlined, enhancing efficiency while requiring minimal manual effort.
+
 
 ## How this toolkit works?
 To run these scripts, follow these steps:
-1.	Use PowerShell: You’ll need to use PowerShell, a tool on your computer.
-2.	Enter Data: Download and Open the Data.xlsx file and update the specific Excel sheet and type in the information related to the task you want to perform.
+1.  Utilize PowerShell: Utilize PowerShell, a tool available on the computer.
+2.  Input Data: Download and open the Data.xlsx file, then update the specific Excel sheet by entering the information relevant to the task at hand.
 3.	Each script’s execution procedure is documented individually within this repository.
 4.	Run the Script: After entering the data, run a specific script. The script will use the information from the Excel sheet as input.
 
