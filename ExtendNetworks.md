@@ -6,12 +6,12 @@ This script extends the Distributed Switch Port Groups from the source vCenter t
 
 ## Procedure to run the script:
 1.	Data Preparation:
-o	Download the Data.xlsx file and Fill in the “NetworkExtension” sheet with the necessary details. Refer to the provided instructions within the same sheet.
+Download the Data.xlsx file and Fill in the “NetworkExtension” sheet with the necessary details. Refer to the provided instructions within the same sheet.
 2.	Script Execution:
-o	Download the ExtendNetworks.ps1 script.
-o	On a Windows server, open Windows PowerShell.
-o	Run the ExtendNetworks.ps1 script.
-o	Choose the Data.xlsx Excel file when prompted.
-o	Follow the onscreen instructions.
+Download the ExtendNetworks.ps1 script.
+On a Windows server, open Windows PowerShell.
+Run the ExtendNetworks.ps1 script.
+Choose the Data.xlsx Excel file when prompted.
+Follow the onscreen instructions.
 ## End Result: Upon successful completion of the script, on-premises networks will be extended to the Cloud NSX-T, enabling the utilization of the extended networks.
 ## Next Script: Script 3: vMotion/Bulk/Cold Migration of VMs
