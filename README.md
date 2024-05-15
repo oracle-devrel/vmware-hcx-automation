@@ -9,11 +9,17 @@ VMware HCX automation, built with VMware PowerCLi Module on PowerShell, extracts
 
 
 ## Toolkit Supported Services:
+<span style="color:red"> *Download Script from: [HCX-Config.PS1](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Config.ps1)* </span>
 
-1.	Script 1: HCX OVA Deploy & Configure [HCX-Config.PS1](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Config.ps1)
-2.	Script 2: Extend On-prem Networks.
-3.	Script 3: vMotion/Bulk/Cold Migration of VMs
-4.	Script 4: Protect VMs from On-prem to OCVS
+
+Task | What it does? | Download Script | Procedure to run the script
+--- | --- | --- | --- 
+HCX OVA Deploy & Configure | 301 | [HCX-Config.PS1](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Config.ps1) | [HCX-Config.md](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Config.md) 
+Extend On-prem Networks | 301 | [ExtendNetworks.ps1](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/ExtendNetworks.ps1) | [ExtendNetworks.md](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/ExtendNetworks.md) 
+vMotion/Bulk/Cold Migration of VMs | 301 | [HCX-Migrate-VMs.ps1](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Migrate-VMs.ps1) | [HCX-Migrate-VMs.md](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Migrate-VMs.md)
+Protect VMs from On-prem to OCVS | 301 | [HCX-Replicate-VMs.ps1](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Replicate-VMs.ps1) | [HCX-Replicate-VMs.md](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Replicate-VMs.md) 
+
+<img src="https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/Services.png" alt="drawing" width="1200"/>
 
 
 
