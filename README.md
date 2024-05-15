@@ -8,6 +8,21 @@
 
 VMware HCX automation, built with VMware PowerCLi Module on PowerShell, extracts data from Excel to execute tasks like HCX Connector setup, service mesh creation, network extension, VM migration, and VM replication. The Excel sheet serves as the VMware HCX infrastructure design document. This automation optimizes efficiency, delivering seamless migrations and substantial time savings for users. Ultimately, it facilitates a smooth transition to OCVS, enhancing the overall migration journey and customer experience.
 
+### Why VMware-HCX-Automation:
+
+Using the regular console for VMware HCX migration or replication can be quite cumbersome. It involves a lot of clicking and takes a long time to set up migration or replication for just one virtual machine (VM).
+
+Additionally, manually doing this through the console is both tedious and prone to errors.
+
+With this automation in place, performing single-click Deployment, Migration, and Replication for a large number of VMs becomes feasible. The process is streamlined, enhancing efficiency while requiring minimal manual effort.
+
+
+## How this toolkit works?
+To run these scripts, follow these steps:
+1.  Utilize PowerShell
+2.  **Input Data:** Download and open the [Data.xlsx](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/Data.xlsx) file, then update the specific Excel sheet by entering the information relevant to the task at hand.
+3.	Each script’s execution procedure is documented individually within this repository.
+4.	**Run the Script:** After entering the data, run a specific script. The script will use the information from the Excel sheet as input.
 
 ## Toolkit Supported Services:
 
@@ -25,22 +40,6 @@ Script 4: Protect VMs from On-prem to OCVS | 301 | [HCX-Replicate-VMs.ps1](https
 
 
 
-
-### Why VMware-HCX-Automation:
-
-Using the regular console for VMware HCX migration or replication can be quite cumbersome. It involves a lot of clicking and takes a long time to set up migration or replication for just one virtual machine (VM).
-
-Additionally, manually doing this through the console is both tedious and prone to errors.
-
-With this automation in place, performing single-click Deployment, Migration, and Replication for a large number of VMs becomes feasible. The process is streamlined, enhancing efficiency while requiring minimal manual effort.
-
-
-## How this toolkit works?
-To run these scripts, follow these steps:
-1.  Utilize PowerShell
-2.  **Input Data:** Download and open the [Data.xlsx](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/Data.xlsx) file, then update the specific Excel sheet by entering the information relevant to the task at hand.
-3.	Each script’s execution procedure is documented individually within this repository.
-4.	**Run the Script:** After entering the data, run a specific script. The script will use the information from the Excel sheet as input.
 
 
 
@@ -85,7 +84,7 @@ Customers or Independent Software Vendors (ISVs) aiming to migrate or replicate 
 
 ## Where to get started?
 
-Click the link: "https://github.com/oracle-devrel/vmware-hcx-automation" to download the Data Excel file, Scripts and procedure to run  each script.
+Click [VMware-HCX-Automation](https://github.com/oracle-devrel/vmware-hcx-automation) to download the Data Excel file, Scripts and procedure to run  each script.
 
 
 
