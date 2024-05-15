@@ -5,12 +5,12 @@
 
 ## Objective:
 
-VMware HCX automation, built with VMware PowerCLi Module on PowerShell, extracts data from Excel to execute tasks like HCX Connector setup, service mesh creation, network extension, VM migration, and VM replication. The Excel sheet serves as the VMware HCX infrastructure design document. This automation optimize efficiency, delivering seamless migrations and substantial time savings for users. Ultimately, it facilitates a smooth transition to OCVS, enhancing the overall migration journey and customer experience.
+VMware HCX automation, built with VMware PowerCLi Module on PowerShell, extracts data from Excel to execute tasks like HCX Connector setup, service mesh creation, network extension, VM migration, and VM replication. The Excel sheet serves as the VMware HCX infrastructure design document. This automation optimizes efficiency, delivering seamless migrations and substantial time savings for users. Ultimately, it facilitates a smooth transition to OCVS, enhancing the overall migration journey and customer experience.
 
 
 ## Toolkit Supported Services:
 
-1.	Script 1: HCX OVA Deploy & Configure
+1.	Script 1: HCX OVA Deploy & Configure [HCX-Config.PS1](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Config.ps1)
 2.	Script 2: Extend On-prem Networks.
 3.	Script 3: vMotion/Bulk/Cold Migration of VMs
 4.	Script 4: Protect VMs from On-prem to OCVS
