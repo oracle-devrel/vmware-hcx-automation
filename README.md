@@ -1,12 +1,15 @@
-# vmware-hcx-automation
+
 
 [![License: UPL](https://img.shields.io/badge/license-UPL-green)](https://img.shields.io/badge/license-UPL-green) [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=oracle-devrel_vmware-hcx-automation)](https://sonarcloud.io/dashboard?id=oracle-devrel_vmware-hcx-automation)
 
-## Objective:
+# vmware-hcx-automation
 
-VMware HCX automation, built with VMware PowerCLi Module on PowerShell, extracts data from Excel to execute tasks like HCX Connector setup, service mesh creation, network extension, VM migration, and VM replication. The Excel sheet serves as the VMware HCX infrastructure design document. 
-This automation optimizes efficiency, delivering seamless migrations and substantial time savings for users. 
-Ultimately, it facilitates a smooth transition to Oracle Cloud VMware Solution (OCVS), enhancing the overall migration journey and customer experience.
+VMware HCX Automation facilitates effortless automation of your VMware HCX tasks. This solution enables efficient deployment and configuration of Onprem HCX Manager, along with migration/replication of virtual machines to Oracle Cloud VMware Solution (OCVS) by utilizing data extracted from Excel sheets.
+
+The automation streamlines processes, optimizing efficiency and ensuring seamless migrations, resulting in significant time savings for users. Ultimately, it facilitates a smooth transition to Oracle Cloud VMware Solution (OCVS), enhancing the overall migration journey and customer experience.
+
+This automation is built with VMware PowerCLi Module on PowerShell.
+
 
 ### Why VMware-HCX-Automation:
 
@@ -18,13 +21,13 @@ With this automation in place, performing single-click Deployment, Migration, an
 
 
 ## How to get started?
-**Download script** from the below table and check the **Procedure to run the script** for each script.
+```This toolkit includes four scripts: HCX OVA Deploy & Configure, Network Extension, VM Migration, and VM Replication. Each script is independent and can be executed based on specific requirements. Refer to the "Execution Instructions" section in the table below for guidance on running each script. More details about the scripts are provided in the table.```
 
 ## Scripts in this Toolkit:
 
-Script | What it does? | Download Script | Procedure to run the script
+Script | What it does? | Download Script | Execution Instructions
 --- | --- | --- | ---
-**Script 1**: HCX OVA Deploy & Configure | Deploy and Configure (vCenter Registration, Site Pairing, Service Mesh Creation) HCX Connector OVA on On-Premises vCenter | [HCX-Config.PS1](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Config.ps1) | [HCX-Config.md](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Config.md) 
+**Script 1**: HCX OVA Deploy & Configure | Deploys and configures HCX Connector OVA on On-Premises vCenter, including vCenter registration, site pairing, and service mesh creation.	 | [HCX-Config.PS1](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Config.ps1) | [HCX-Config.md](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Config.md) 
 **Script 2**: Extend On-prem Networks | Extend Distributed Switch Port Groups from the source vCenter to the destination NSX-T  | [ExtendNetworks.ps1](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/ExtendNetworks.ps1) | [ExtendNetworks.md](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/ExtendNetworks.md) 
 **Script 3**: vMotion/Bulk/Cold Migration of VMs | Migration of virtual machines (Bulk Migration, Cross-cloud vMotion, Cold Migration) from the source vCenter to the Target vCenter | [HCX-Migrate-VMs.ps1](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Migrate-VMs.ps1) | [HCX-Migrate-VMs.md](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Migrate-VMs.md)
 **Script 4**: Protect VMs from On-prem to OCVS | Replicates Virtual machines from the Source vCenter to the Target vCenter | [HCX-Replicate-VMs.ps1](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Replicate-VMs.ps1) | [HCX-Replicate-VMs.md](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Replicate-VMs.md) 
