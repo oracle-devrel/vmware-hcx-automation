@@ -2,16 +2,41 @@
 
 ## Script 2: Extend On-prem Networks. 
 This script extends the Distributed Switch Port Groups from the source vCenter to the destination NSX-T using VMware HCX Network Extension feature.
-## Note: Port groups with ephemeral bindings, untagged port groups, VMkernel port groups, and port groups from vSphere Standard switch cannot be extended.
+
+>Note: Port groups with ephemeral bindings, untagged port groups, VMkernel port groups, and port groups from vSphere Standard switch cannot be extended.
+
+## Pre-Requisites:
+
+1.	A Windows Jumpbox with PowerShell version 5 or higher.
+2.	The execution policy in PowerShell should be set to **RemoteSigned**, run the following command (**if not ran before**)
+      ```
+      Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned.
+      ```
+3.	Run the following commands in PowerShell to Install the PowerCLi, Excel and SSH Module and Ignore the SSL (**if not ran before**)
+
+      ```
+      Install-Module VMware.PowerCLi -Scope CurrentUser -SkipPublisherCheck -AllowClobber -Force
+      ```
+      ```
+      Install-Module -Name ImportExcel -Scope CurrentUser
+      ```
+      ```
+      Set-PowerCLiConfiguration -InvalidCertificateAction Ignore -Confirm:$false -ParticipateInCeip $false
+      ```
+
+4.    Connectivity Requirements:
+      ```
+      1. Verify that the Onprem HCX Manager Network can reach the Cloud Side HCX Manager on Port 443 (for site pairing).
+      2. The Jump box should have access to the Onprem HCX Manager Network on port 443.
+      ```
 
 ## Procedure to run the script:
-1.	Data Preparation:
-Download the Data.xlsx file and Fill in the “NetworkExtension” sheet with the necessary details. Refer to the provided instructions within the same sheet.
-2.	Script Execution:
-Download the ExtendNetworks.ps1 script.
-On a Windows server, open Windows PowerShell.
-Run the ExtendNetworks.ps1 script.
-Choose the Data.xlsx Excel file when prompted.
-Follow the onscreen instructions.
-## End Result: Upon successful completion of the script, on-premises networks will be extended to the Cloud NSX-T, enabling the utilization of the extended networks.
+1. Download the [Data.xlsx](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/Data.xlsx) file, Fill in the sheet named “**NetworkExtension**” with the correct details. Refer to the instructions provided in the same sheet to complete each cell in the Excel file.
+
+2. Download the PowerShell Script: [ExtendNetworks.ps1](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/ExtendNetworks.ps1)
+On Windows PowerShell. Run the ExtendNetworks.ps1 script. Follow the onscreen instructions.
+
+
+**End Result**: Upon successful completion of the script, on-premises networks will be extended to the Cloud NSX-T, enabling the utilization of the extended networks.
+
 ## Next Script: Script 3: vMotion/Bulk/Cold Migration of VMs
