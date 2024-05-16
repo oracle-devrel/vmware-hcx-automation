@@ -2,45 +2,33 @@
 
 [![License: UPL](https://img.shields.io/badge/license-UPL-green)](https://img.shields.io/badge/license-UPL-green) [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=oracle-devrel_vmware-hcx-automation)](https://sonarcloud.io/dashboard?id=oracle-devrel_vmware-hcx-automation)
 
->Note: 
-
 ## Objective:
 
-VMware HCX automation, built with VMware PowerCLi Module on PowerShell, extracts data from Excel to execute tasks like HCX Connector setup, service mesh creation, network extension, VM migration, and VM replication. The Excel sheet serves as the VMware HCX infrastructure design document. This automation optimizes efficiency, delivering seamless migrations and substantial time savings for users. Ultimately, it facilitates a smooth transition to OCVS, enhancing the overall migration journey and customer experience.
+VMware HCX automation, built with VMware PowerCLi Module on PowerShell, extracts data from Excel to execute tasks like HCX Connector setup, service mesh creation, network extension, VM migration, and VM replication. The Excel sheet serves as the VMware HCX infrastructure design document. This automation optimizes efficiency, delivering seamless migrations and substantial time savings for users. Ultimately, it facilitates a smooth transition to Oracle Cloud VMware Solution (OCVS), enhancing the overall migration journey and customer experience.
 
 ### Why VMware-HCX-Automation:
 
-Using the regular console for VMware HCX migration or replication can be quite cumbersome. It involves a lot of clicking and takes a long time to set up migration or replication for just one virtual machine (VM).
+Using the regular console for VMware HCX migration or replication can be quite cumbersome. It involves a lot of clicking and takes a long time to set up HCX and perform migration or replication of Virtual Machines.
 
-Additionally, manually doing this through the console is both tedious and prone to errors.
+Additionally, manually doing this through the console is tedious and prone to errors.
 
 With this automation in place, performing single-click Deployment, Migration, and Replication for a large number of VMs becomes feasible. The process is streamlined, enhancing efficiency while requiring minimal manual effort.
 
 
-## How this toolkit works?
-To run these scripts, follow these steps:
-1.  Utilize PowerShell
-2.  **Input Data:** Download and open the [Data.xlsx](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/Data.xlsx) file, then update the specific Excel sheet by entering the information relevant to the task at hand.
-3.	Each script’s execution procedure is documented individually within this repository.
-4.	**Run the Script:** After entering the data, run a specific script. The script will use the information from the Excel sheet as input.
+## How to run each script and to get started?
+**Download script** from the below table and check the **Procedure to run the script** for each script.
 
 ## Toolkit Supported Services:
 
 Script | What it does? | Download Script | Procedure to run the script
---- | --- | --- | --- 
-Script 1: HCX OVA Deploy & Configure | Deploy and Configure HCX Connector OVA on On-Premises vCenter | [HCX-Config.PS1](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Config.ps1) | [HCX-Config.md](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Config.md) 
+--- | --- | --- | ---
+Script 1: HCX OVA Deploy & Configure | Deploy and Configure (vCenter Registration, Site Pairing, Service Mesh Creation) HCX Connector OVA on On-Premises vCenter | [HCX-Config.PS1](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Config.ps1) | [HCX-Config.md](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Config.md) 
 Script 2: Extend On-prem Networks | Extend Distributed Switch Port Groups from the source vCenter to the destination NSX-T  | [ExtendNetworks.ps1](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/ExtendNetworks.ps1) | [ExtendNetworks.md](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/ExtendNetworks.md) 
-Script 3: vMotion/Bulk/Cold Migration of VMs | 301 | [HCX-Migrate-VMs.ps1](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Migrate-VMs.ps1) | [HCX-Migrate-VMs.md](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Migrate-VMs.md)
-Script 4: Protect VMs from On-prem to OCVS | 301 | [HCX-Replicate-VMs.ps1](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Replicate-VMs.ps1) | [HCX-Replicate-VMs.md](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Replicate-VMs.md) 
+Script 3: vMotion/Bulk/Cold Migration of VMs | This script facilitates the migration of virtual machines (Bulk Migration, Cross-cloud vMotion, Cold Migration) from the source vCenter to the OCVS vCenter | [HCX-Migrate-VMs.ps1](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Migrate-VMs.ps1) | [HCX-Migrate-VMs.md](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Migrate-VMs.md)
+Script 4: Protect VMs from On-prem to OCVS | This script will Replicate Virtual machines from the Source vCenter to the Target vCenter | [HCX-Replicate-VMs.ps1](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Replicate-VMs.ps1) | [HCX-Replicate-VMs.md](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Replicate-VMs.md) 
 
-## Script Execution
+## Each Script's Task:
 <img src="https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/Services.png" alt="drawing" width="1000"/>
-
-
-
-
-
-
 
 
 ## Who can use the toolkit??
@@ -50,16 +38,15 @@ Customers or Independent Software Vendors (ISVs) aiming to migrate or replicate 
 
 ## Pre-Requisites:
 
-1.	A Windows Jump box (Preferably in the On-Prem Network) is required to execute the scripts, and it must be able to access the Onprem HCX Manager Network. Ports 22 and 443 should be open.
-2.	Ensure that the PowerShell version on the Jump box is 5 or higher.
-3.	The execution policy in PowerShell should be set: Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned.
-4.	Install the PowerCLi module, Ignore SSL, Excel and SSH Module in PowerShell:
+1.	A Windows Jumpbox with PowerShell version 5 or higher.
+2.	The execution policy in PowerShell should be set to **RemoteSigned**, run the following command:
+      ```
+      Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned.
+      ```
+3.	Run the following commands in PowerShell to Install the PowerCLi, Excel and SSH Module and Ignore the SSL:
 
       ```
       Install-Module VMware.PowerCLi -Scope CurrentUser -SkipPublisherCheck -AllowClobber -Force
-      ```
-      ```
-      Set-PowerCLiConfiguration -InvalidCertificateAction Ignore -Confirm:$false -ParticipateInCeip $false
       ```
       ```
       Install-Module -Name ImportExcel -Scope CurrentUser
@@ -67,24 +54,26 @@ Customers or Independent Software Vendors (ISVs) aiming to migrate or replicate 
       ```
       Install-Module -Name Posh-SSH -Scope CurrentUser -Confirm:$false
       ```
+      ```
+      Set-PowerCLiConfiguration -InvalidCertificateAction Ignore -Confirm:$false -ParticipateInCeip $false
+      ```
 
-5.	Ensure that HCX Onprem and HCX Cloud Server can connect to connect.hcx.vmware.com on 443 port for license activation.
-11.	Verify that the Onprem HCX Manager Network can reach the Cloud Side HCX Manager on Port 443 (for site pairing).
-12.	The Jump box should have access to the Onprem HCX Manager Network on port 22 and the Onprem vCenter IP or FQDN on Port 443.
-
+4.    Connectivity Requirements:
+      ```
+      1. Ensure that HCX Onprem and HCX Cloud Server can connect to connect.hcx.vmware.com on 443 port for license activation.
+      2. Verify that the Onprem HCX Manager Network can reach the Cloud Side HCX Manager on Port 443 (for site pairing).
+      3. The Jump box should have access to the Onprem HCX Manager Network on port 22 and the Onprem vCenter IP or FQDN on Port 443.
+      ```
 
 ## Advantages of VMware HCX Automation:
 
 1.	Saves time :hourglass_flowing_sand:
-2.	Minimizes manual labour
-3.	Accelerates migrations
+2.	Minimizes manual labour :running:
+3.	Accelerates migrations ⚡
 4.	Ensures seamless transition to OCVS
 
 
 
-## Where to get started?
-
-Click [VMware-HCX-Automation](https://github.com/oracle-devrel/vmware-hcx-automation) to download the Data Excel file, Scripts and procedure to run  each script.
 
 
 
