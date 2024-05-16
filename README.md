@@ -4,7 +4,9 @@
 
 ## Objective:
 
-VMware HCX automation, built with VMware PowerCLi Module on PowerShell, extracts data from Excel to execute tasks like HCX Connector setup, service mesh creation, network extension, VM migration, and VM replication. The Excel sheet serves as the VMware HCX infrastructure design document. This automation optimizes efficiency, delivering seamless migrations and substantial time savings for users. Ultimately, it facilitates a smooth transition to Oracle Cloud VMware Solution (OCVS), enhancing the overall migration journey and customer experience.
+VMware HCX automation, built with VMware PowerCLi Module on PowerShell, extracts data from Excel to execute tasks like HCX Connector setup, service mesh creation, network extension, VM migration, and VM replication. The Excel sheet serves as the VMware HCX infrastructure design document. 
+This automation optimizes efficiency, delivering seamless migrations and substantial time savings for users. 
+Ultimately, it facilitates a smooth transition to Oracle Cloud VMware Solution (OCVS), enhancing the overall migration journey and customer experience.
 
 ### Why VMware-HCX-Automation:
 
@@ -15,10 +17,10 @@ Additionally, manually doing this through the console is tedious and prone to er
 With this automation in place, performing single-click Deployment, Migration, and Replication for a large number of VMs becomes feasible. The process is streamlined, enhancing efficiency while requiring minimal manual effort.
 
 
-## How to run each script and to get started?
+## How to get started?
 **Download script** from the below table and check the **Procedure to run the script** for each script.
 
-## Toolkit Supported Services:
+## Scripts in this Toolkit:
 
 Script | What it does? | Download Script | Procedure to run the script
 --- | --- | --- | ---
@@ -31,39 +33,10 @@ Script 4: Protect VMs from On-prem to OCVS | This script will Replicate Virtual 
 <img src="https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/Services.png" alt="drawing" width="1000"/>
 
 
-## Who can use the toolkit??
+## Who can use these scripts??
 
 Customers or Independent Software Vendors (ISVs) aiming to migrate or replicate a large number of virtual machines from an on-premises vCenter to the Oracle Cloud VMware Solution (OCVS).
 
-
-## Pre-Requisites:
-
-1.	A Windows Jumpbox with PowerShell version 5 or higher.
-2.	The execution policy in PowerShell should be set to **RemoteSigned**, run the following command:
-      ```
-      Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned.
-      ```
-3.	Run the following commands in PowerShell to Install the PowerCLi, Excel and SSH Module and Ignore the SSL:
-
-      ```
-      Install-Module VMware.PowerCLi -Scope CurrentUser -SkipPublisherCheck -AllowClobber -Force
-      ```
-      ```
-      Install-Module -Name ImportExcel -Scope CurrentUser
-      ```
-      ```
-      Install-Module -Name Posh-SSH -Scope CurrentUser -Confirm:$false
-      ```
-      ```
-      Set-PowerCLiConfiguration -InvalidCertificateAction Ignore -Confirm:$false -ParticipateInCeip $false
-      ```
-
-4.    Connectivity Requirements:
-      ```
-      1. Ensure that HCX Onprem and HCX Cloud Server can connect to connect.hcx.vmware.com on 443 port for license activation.
-      2. Verify that the Onprem HCX Manager Network can reach the Cloud Side HCX Manager on Port 443 (for site pairing).
-      3. The Jump box should have access to the Onprem HCX Manager Network on port 22 and the Onprem vCenter IP or FQDN on Port 443.
-      ```
 
 ## Advantages of VMware HCX Automation:
 
@@ -71,8 +44,6 @@ Customers or Independent Software Vendors (ISVs) aiming to migrate or replicate 
 2.	Minimizes manual labour :running:
 3.	Accelerates migrations ⚡
 4.	Ensures seamless transition to OCVS
-
-
 
 
 
