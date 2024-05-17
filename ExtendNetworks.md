@@ -31,9 +31,9 @@ This script extends the Distributed Switch Port Groups from the source vCenter t
       ```
 
 ## Execution Steps:
-1. Download the [Data.xlsx](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/Data.xlsx) file, Fill in the sheet named “**NetworkExtension**” with the correct details. Refer to the instructions provided in the same sheet to complete each cell in the Excel file.
+1. Download the [Data.xlsx](https://github.com/oracle-devrel/vmware-hcx-automation/blob/main/Data.xlsx) file, Fill in the sheet named “**NetworkExtension**” with the correct details. Refer to the instructions provided in the same sheet to complete each cell in the Excel file.
 
-2. Download the PowerShell Script: [ExtendNetworks.ps1](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/ExtendNetworks.ps1)
+2. Download the PowerShell Script: [ExtendNetworks.ps1](https://github.com/oracle-devrel/vmware-hcx-automation/blob/main/ExtendNetworks.ps1)
 On Windows PowerShell. Run the ExtendNetworks.ps1 script. Follow the onscreen instructions.
 
 
