@@ -1,6 +1,6 @@
 [![License: UPL](https://img.shields.io/badge/license-UPL-green)](https://img.shields.io/badge/license-UPL-green) [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=oracle-devrel_vmware-hcx-automation)](https://sonarcloud.io/dashboard?id=oracle-devrel_vmware-hcx-automation)
 
-## Script 4: Protect VMs from On-prem to OCVS 
+## Protect VMs from On-prem to OCVS 
 This script will Replicate Virtual machines from the Source vCenter to the Target vCenter.
 
 ## Pre-Requisites:
