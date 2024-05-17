@@ -4,26 +4,31 @@
 
 # vmware-hcx-automation
 
-VMware HCX Automation facilitates effortless automation of your VMware HCX tasks. This solution enables efficient deployment and configuration of Onprem HCX Manager, along with migration/replication of virtual machines to Oracle Cloud VMware Solution (OCVS) by utilizing data extracted from Excel sheets.
+- VMware HCX Automation facilitates effortless automation of your VMware HCX tasks. This solution enables efficient deployment and configuration of Onprem HCX Manager, along with migration/replication of virtual machines to Oracle Cloud VMware Solution (OCVS) by utilizing data extracted from Excel sheets.
 
-The automation streamlines processes, optimizing efficiency and ensuring seamless migrations, resulting in significant time savings for users. Ultimately, it facilitates a smooth transition to Oracle Cloud VMware Solution (OCVS), enhancing the overall migration journey and customer experience.
+- The automation streamlines processes, optimizing efficiency and ensuring seamless migrations, resulting in significant time savings for users. Ultimately, it facilitates a smooth transition to Oracle Cloud VMware Solution (OCVS), enhancing the overall migration journey and customer experience.
 
-This automation is built with VMware PowerCLi Module on PowerShell.
+- This automation is built with VMware PowerCLi Module on PowerShell.
 
 
 ### Why VMware-HCX-Automation:
 
-Using the regular console for VMware HCX migration or replication can be quite cumbersome. It involves a lot of clicking and takes a long time to set up HCX and perform migration or replication of Virtual Machines.
+* Using the regular console for VMware HCX migration or replication can be quite cumbersome. It involves a lot of clicking and takes a long time to set up HCX and perform migration or replication of Virtual Machines.
 
-Additionally, manually doing this through the console is tedious and prone to errors.
+* Additionally, manually doing this through the console is tedious and prone to errors.
 
-With this automation in place, performing single-click Deployment, Migration, and Replication for a large number of VMs becomes feasible. The process is streamlined, enhancing efficiency while requiring minimal manual effort.
+* With this automation in place, performing single-click Deployment, Migration, and Replication for a large number of VMs becomes feasible. The process is streamlined, enhancing efficiency while requiring minimal manual effort.
+
+
+## Who can use these scripts??
+
+Customers or Independent Software Vendors (ISVs) aiming to migrate or replicate a large number of virtual machines from an on-premises vCenter to the Oracle Cloud VMware Solution (OCVS).
 
 
 ## How to get started?
 ```This toolkit includes four scripts: HCX OVA Deploy & Configure, Network Extension, VM Migration, and VM Replication. Each script is independent and can be executed based on specific requirements. Refer to the "Execution Instructions" section in the table below for guidance on running each script. More details about the scripts are provided in the table.```
 
-## Scripts in this Toolkit:
+## Automation scripts:
 
 Script | What it does? | Download Script | Execution Instructions
 --- | --- | --- | ---
@@ -32,21 +37,17 @@ Script | What it does? | Download Script | Execution Instructions
 **Script 3**: vMotion/Bulk/Cold Migration of VMs | Migration of virtual machines (Bulk Migration, Cross-cloud vMotion, Cold Migration) from the source vCenter to the Target vCenter | [HCX-Migrate-VMs.ps1](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Migrate-VMs.ps1) | [HCX-Migrate-VMs.md](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Migrate-VMs.md)
 **Script 4**: Protect VMs from On-prem to OCVS | Replicates Virtual machines from the Source vCenter to the Target vCenter | [HCX-Replicate-VMs.ps1](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Replicate-VMs.ps1) | [HCX-Replicate-VMs.md](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Replicate-VMs.md) 
 
-## Each Script's Task:
+## Script execution points:
 <img src="https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/Services.png" alt="drawing" width="1000"/>
 
-
-## Who can use these scripts??
-
-Customers or Independent Software Vendors (ISVs) aiming to migrate or replicate a large number of virtual machines from an on-premises vCenter to the Oracle Cloud VMware Solution (OCVS).
 
 
 ## Advantages of VMware HCX Automation:
 
-1.	Saves time :hourglass_flowing_sand:
-2.	Minimizes manual labour :running:
-3.	Accelerates migrations ⚡
-4.	Ensures seamless transition to OCVS
+✅ Saves time :hourglass_flowing_sand: \
+✅ Minimizes manual labour :running: \
+✅ Accelerates migrations ⚡ \
+✅ Ensures seamless transition to OCVS \
 
 
 
