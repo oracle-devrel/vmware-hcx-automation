@@ -37,11 +37,11 @@ Deploys and Configures HCX Connector OVA on On-Premises vCenter
 
   - ```Navigate to the HCX Cloud UI (https://ip or fqdn of hcx cloud manager). Go to “Administration” > “System Updates.” Click “Request Download Link” to download the HCX Connector OVA file to the Windows Jump box.```
 
-2. Download the [Data.xlsx](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/Data.xlsx) file, Fill in the sheet named “**OVADeploy**” with the correct details. Refer to the instructions provided in the same sheet to complete each cell in the Excel file.
+2. Download the [Data.xlsx](https://github.com/oracle-devrel/vmware-hcx-automation/blob/main/Data.xlsx) file, Fill in the sheet named “**OVADeploy**” with the correct details. Refer to the instructions provided in the same sheet to complete each cell in the Excel file.
 
-3. Download the [VMware.HCX.psm1](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/VMware.HCX.psm1) module to Jump box
+3. Download the [VMware.HCX.psm1](https://github.com/oracle-devrel/vmware-hcx-automation/blob/main/VMware.HCX.psm1) module to Jump box
 
-4. Download the PowerShell Script: [HCX-Config.ps1](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Config.ps1)
+4. Download the PowerShell Script: [HCX-Config.ps1](https://github.com/oracle-devrel/vmware-hcx-automation/blob/main/HCX-Config.ps1)
 On Windows, Execute it using PowerShell. Follow the onscreen instructions.
 
 ## End result:
