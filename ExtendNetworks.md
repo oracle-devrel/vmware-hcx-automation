@@ -38,3 +38,8 @@ On Windows PowerShell. Run the ExtendNetworks.ps1 script. Follow the onscreen in
 
 
 **End Result**: Upon successful completion of the script, on-premises networks will be extended to the Cloud NSX-T, enabling the utilization of the extended networks.
+
+## Other Scripts:
+- [HCX OVA Deploy & Configure](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Config.md) 
+- [vMotion/Bulk/Cold Migration of VMs](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Migrate-VMs.md)
+- [Protect VMs from On-prem to OCVS](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Replicate-VMs.md) 
