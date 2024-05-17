@@ -42,3 +42,9 @@ This script facilitates the migration of virtual machines from the source vCente
 On Windows, Execute it using PowerShell. Follow the onscreen instructions.
 
 **End Result**: Once the script finishes successfully, the VM migration begins to Cloud OCVS. You can then monitor the synchronization process using the HCX plugin.
+
+
+## Other Scripts:
+- [HCX OVA Deploy & Configure](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Config.md)
+- [Extend On-prem Networks](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/ExtendNetworks.md)
+- [Protect VMs from On-prem to OCVS](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Replicate-VMs.md) 
