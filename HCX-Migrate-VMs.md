@@ -1,14 +1,14 @@
 [![License: UPL](https://img.shields.io/badge/license-UPL-green)](https://img.shields.io/badge/license-UPL-green) [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=oracle-devrel_vmware-hcx-automation)](https://sonarcloud.io/dashboard?id=oracle-devrel_vmware-hcx-automation)
 
-## Script 3: vMotion/Bulk/Cold Migration of VMs
+## vMotion/Bulk/Cold Migration of VMs
 
 This script facilitates the migration of virtual machines from the source vCenter to the OCVS vCenter. The customer can choose from three migration options: 
 
-```1. Bulk Migration: Migrate multiple virtual machines simultaneously. ```
+- Bulk Migration: Migrate multiple virtual machines simultaneously. 
 
-```2. vMotion-Based Migration: Move powered-on virtual machines. ```
+- vMotion-Based Migration: Move powered-on virtual machines. 
 
-```3. Cold Migration: Migrate virtual machines while they are powered off.```
+- Cold Migration: Migrate virtual machines while they are powered off.
 
 
 ## Pre-Requisites:
@@ -35,13 +35,10 @@ This script facilitates the migration of virtual machines from the source vCente
 
 
 
-## Procedure to run the script:
+## Execution Steps:
 1. Download the [Data.xlsx](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/Data.xlsx) file, Fill in the sheet named “**MigrateVMTemplate**” with the correct details. Refer to the instructions provided in the same sheet to complete each cell in the Excel file.
 
 2. Download the PowerShell Script: [HCX-Migrate-VMs.ps1](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Migrate-VMs.ps1)
-On Windows PowerShell. Run the HCX-Migrate-VMs.ps1 script. Follow the onscreen instructions.
-
-
+On Windows, Execute it using PowerShell. Follow the onscreen instructions.
 
 **End Result**: Once the script finishes successfully, the VM migration begins to Cloud OCVS. You can then monitor the synchronization process using the HCX plugin.
-## Next Script: Script 4: Protect VMs from On-prem to OCVS 
