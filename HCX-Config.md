@@ -49,3 +49,8 @@ On Windows, Execute it using PowerShell. Follow the onscreen instructions.
 1.	**HCX Manager VM Deployment**: Upon successful execution of the script, the HCX Manager VM will be deployed in the on-premises vCenter. It will have a static IP address.
 2.	**HCX License and Registration**: The script will apply the HCX license. It will also register with the on-premises vCenter and, if available, the on-premises NSX.
 3.	**HCX Site-Pairing and Profiles**: The script will create HCX site-pairing. Additionally, it will set up compute profiles and network profiles. A service mesh will also be established.
+
+## Other Scripts:
+- [Extend On-prem Networks](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/ExtendNetworks.md)
+- [vMotion/Bulk/Cold Migration of VMs](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Migrate-VMs.md)
+- [Protect VMs from On-prem to OCVS](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Replicate-VMs.md)
