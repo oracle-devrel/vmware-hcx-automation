@@ -6,11 +6,11 @@ This script will Replicate Virtual machines from the Source vCenter to the Targe
 ## Pre-Requisites:
 
 1.	A Windows Jumpbox with PowerShell version 5 or higher.
-2.	The execution policy in PowerShell should be set to **RemoteSigned**, run the following command (**if not ran before**)
+2.	The execution policy in PowerShell should be set to **RemoteSigned**, run the following command (**if not executed before**)
       ```
       Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned.
       ```
-3.	Run the following commands in PowerShell to Install the PowerCLi, Excel and SSH Module and Ignore the SSL (**if not ran before**)
+3.	Run the following commands in PowerShell to Install the PowerCLi, Excel and SSH Module and Ignore the SSL (**if not executed before**)
 
       ```
       Install-Module VMware.PowerCLi -Scope CurrentUser -SkipPublisherCheck -AllowClobber -Force
