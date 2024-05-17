@@ -35,6 +35,6 @@ On Windows, Execute it using PowerShell. Follow the onscreen instructions.
 
 
 ## Other Scripts:
-- [HCX OVA Deploy & Configure](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Config.md)
-- [Extend On-prem Networks](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/ExtendNetworks.md)
-- [vMotion/Bulk/Cold Migration of VMs](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Migrate-VMs.md)
+- [HCX OVA Deploy & Configure](https://github.com/oracle-devrel/vmware-hcx-automation/blob/documenation/HCX-Config.md)
+- [Extend On-prem Networks](https://github.com/oracle-devrel/vmware-hcx-automation/blob/documenation/ExtendNetworks.md)
+- [vMotion/Bulk/Cold Migration of VMs](https://github.com/oracle-devrel/vmware-hcx-automation/blob/documenation/HCX-Migrate-VMs.md)
