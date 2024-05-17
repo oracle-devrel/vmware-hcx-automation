@@ -35,7 +35,7 @@ Deploys and Configures HCX Connector OVA on On-Premises vCenter
 ## Execution Steps:
 1. Download the HCX Connector OVA File from HCX Cloud UI: 
 
-  - ```Navigate to the HCX Cloud UI (https://hcxcloudmgr-ip-or-fqdn). Go to “Administration” > “System Updates.” Click “Request Download Link” to download the HCX Connector OVA file to the Windows Jump box.```
+  - ```Navigate to the HCX Cloud UI (https://ip or fqdn of hcx cloud manager). Go to “Administration” > “System Updates.” Click “Request Download Link” to download the HCX Connector OVA file to the Windows Jump box.```
 
 2. Download the [Data.xlsx](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/Data.xlsx) file, Fill in the sheet named “**OVADeploy**” with the correct details. Refer to the instructions provided in the same sheet to complete each cell in the Excel file.
 
