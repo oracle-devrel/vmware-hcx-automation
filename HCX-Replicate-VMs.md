@@ -25,11 +25,10 @@ This script will Replicate Virtual machines from the Source vCenter to the Targe
   
       ```2. The Jump box should have access to the Onprem HCX Manager Network on port 443.```
       
-## Procedure to run the script:
+## Execution Steps:
 1. Download the [Data.xlsx](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/Data.xlsx) file, Fill in the sheet named “**ReplicateVMTemplate**” with the correct details. Refer to the instructions provided in the same sheet to complete each cell in the Excel file.
 
 2. Download the PowerShell Script: [HCX-Replicate-VMs.ps1](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Replicate-VMs.ps1)
-On Windows PowerShell. Run the HCX-Replicate-VMs.ps1 script. Follow the onscreen instructions.
-
+On Windows, Execute it using PowerShell. Follow the onscreen instructions.
 
 **End Result**: Once the script finishes successfully, the VM replication begins to Cloud OCVS. You can then monitor the synchronization process using the HCX plugin.
