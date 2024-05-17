@@ -32,3 +32,9 @@ This script will Replicate Virtual machines from the Source vCenter to the Targe
 On Windows, Execute it using PowerShell. Follow the onscreen instructions.
 
 **End Result**: Once the script finishes successfully, the VM replication begins to Cloud OCVS. You can then monitor the synchronization process using the HCX plugin.
+
+
+## Other Scripts:
+- [HCX OVA Deploy & Configure](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Config.md)
+- [Extend On-prem Networks](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/ExtendNetworks.md)
+- [vMotion/Bulk/Cold Migration of VMs](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Migrate-VMs.md)
