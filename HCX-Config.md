@@ -51,6 +51,6 @@ On Windows, Execute it using PowerShell. Follow the onscreen instructions.
 3.	**HCX Site-Pairing and Profiles**: The script will create HCX site-pairing. Additionally, it will set up compute profiles and network profiles. A service mesh will also be established.
 
 ## Other Scripts:
-- [Extend On-prem Networks](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/ExtendNetworks.md)
-- [vMotion/Bulk/Cold Migration of VMs](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Migrate-VMs.md)
-- [Protect VMs from On-prem to OCVS](https://github.com/oracle-devrel/vmware-hcx-automation/blob/develop/HCX-Replicate-VMs.md)
+- [Extend On-prem Networks](https://github.com/oracle-devrel/vmware-hcx-automation/blob/documenation/ExtendNetworks.md)
+- [vMotion/Bulk/Cold Migration of VMs](https://github.com/oracle-devrel/vmware-hcx-automation/blob/documenation/HCX-Migrate-VMs.md)
+- [Protect VMs from On-prem to OCVS](https://github.com/oracle-devrel/vmware-hcx-automation/blob/documenation/HCX-Replicate-VMs.md)
