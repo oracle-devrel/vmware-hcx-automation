@@ -47,7 +47,7 @@ Protect VMs from On-prem to OCVS | Replicates Virtual machines from the Source v
 ✅ Saves time :hourglass_flowing_sand: \
 ✅ Minimizes manual labour :running: \
 ✅ Accelerates migrations ⚡ \
-✅ Ensures seamless transition to OCVS \
+✅ Ensures seamless transition to OCVS
 
 
 
