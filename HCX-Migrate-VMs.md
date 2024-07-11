@@ -4,9 +4,9 @@
 
 This script facilitates the migration of virtual machines from the source vCenter to the OCVS vCenter. The customer can choose from three migration options: 
 
-- Bulk Migration: Migrate multiple virtual machines simultaneously. 
+- Bulk Migration: Migrate multiple virtual machines simultaneously. (Low downtime migration)
 
-- vMotion-Based Migration: Move powered-on virtual machines. 
+- vMotion-Based Migration: Move virtual machines with Zero Downtime.
 
 - Cold Migration: Migrate virtual machines while they are powered off.
 
