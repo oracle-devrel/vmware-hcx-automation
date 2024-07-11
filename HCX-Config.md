@@ -8,7 +8,7 @@ Deploys and Configures HCX Connector OVA on On-Premises vCenter
 1.	A Windows Jumpbox with PowerShell version 5 or higher.
 2.	The execution policy in PowerShell should be set to **RemoteSigned**, run the following command:
       ```
-      Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned.
+      Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
       ```
 3.	Run the following commands in PowerShell to Install the PowerCLi, Excel and SSH Module and Ignore the SSL:
 
